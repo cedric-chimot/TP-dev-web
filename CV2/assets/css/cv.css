@@ -18,10 +18,8 @@ h3 {
 	text-decoration: underline;
 }
 
-#mon_cv:hover 
-{
-		transition: ease-in-out 1s;
-		transform: translate(15px,0px);
-		background-color: rgba(63, 9, 189, 0.534);
+#mon_cv:hover {
+	transition: ease-in-out 1s;
+	transform: translate(15px, 0px);
+	background-color: rgba(63, 9, 189, 0.534);
 }
-

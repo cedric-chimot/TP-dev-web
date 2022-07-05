@@ -9,9 +9,8 @@ body {
 	position: relative;
 }
 
-@media only screen and (max-width: 580px)
-	{
-		.nav {
-			flex-direction: column;
-		}
+@media only screen and (max-width: 580px) {
+	.nav {
+		flex-direction: column;
 	}
+}

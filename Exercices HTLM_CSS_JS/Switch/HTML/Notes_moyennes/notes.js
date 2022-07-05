@@ -35,22 +35,21 @@ for(notes in tab5){
 
 //tableau par javascript
 
-var i=0;
-var somme=0;
-var moyenne=0;
-var nb_notes=0;
-nb_notes=prompt("Entrez le nombre de notes :","Nb de Notes");
-nb_notes=parseInt(nb_notes);
+var i = 0;
+var somme = 0;
+var moyenne = 0;
+var nb_notes = 0;
+nb_notes = prompt("Entrez le nombre de notes :", "Nb de Notes");
+nb_notes = parseInt(nb_notes);
 notes = new Array(nb_notes);
-for(i=1;i<=nb_notes;i++)
-{
-     
-    note_i=prompt("Entrez la note");
-    notes[i-1]=parseInt(note_i);
-    somme+=notes[i-1];
+for (i = 1; i <= nb_notes; i++) {
+
+    note_i = prompt("Entrez la note");
+    notes[i - 1] = parseInt(note_i);
+    somme += notes[i - 1];
 }
-moyenne=(somme/nb_notes);
-document.write("La moyenne est de : "+moyenne.toFixed(2), "/20");
+moyenne = (somme / nb_notes);
+document.write("La moyenne est de : " + moyenne.toFixed(2), "/20");
 document.write("</br></br>");
 
 if (moyenne >= 10) {
@@ -58,7 +57,7 @@ if (moyenne >= 10) {
     document.write("</br></br>");
 }
 
-else{
+else {
     document.write("Recalé, revenez l'année prochaine !");
     document.write("</br></br>");
 }
@@ -73,7 +72,7 @@ else if (moyenne >= 12 && moyenne < 14) {
     document.write("Mention : Assez-bien", "</br></br>");
 }
 
-else if (moyenne >=14 && moyenne < 16) {
+else if (moyenne >= 14 && moyenne < 16) {
     document.write("Mention : Bien", "</br></br>");
 }
 
