@@ -18,10 +18,10 @@ h3 {
 	text-decoration: underline;
 }
 
-@media only screen and (max-width: 580px)
+#mon_cv:hover 
 {
-	.nav {
-		flex-direction: column;
-	}
+		transition: ease-in-out 1s;
+		transform: translate(15px,0px);
+		background-color: rgba(63, 9, 189, 0.534);
 }
 
