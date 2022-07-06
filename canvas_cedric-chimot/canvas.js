@@ -23,4 +23,3 @@ function draw() {
 }
 
 setInterval(draw, 10);                                            /*Appel de la fonction"draw" toutes les 10 millisecondes*/
-
