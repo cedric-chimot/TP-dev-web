@@ -2,16 +2,25 @@ var canvas = document.getElementById("myCanvas");               /*référence au
 var ctx = canvas.getContext("2d");                              /*stockage du contexte de rendu 2d*/
 
 /*code pour dessiner */
-function draw() {
+var x = canvas.width / 2;                                         /*variable x/y pour définir la position du cercle*/
+var y = canvas.height - 30;
+var dx = 2;                                                       /*ajout de valeur à x/y pour que la balle bouge*/
+var dy = -2;
 
+function drawBall() {
+    ctx.beginPath();                                              
+    ctx.arc(x, y, 10, 0, Math.PI * 2);                            
+    ctx.fillStyle = "#0095DD"                                     
+    ctx.fill();                                                  
+    ctx.closePath();
 }
-setInterval(draw, 10);                                          /*Appel de la fonction"draw" toutes les 10 millisecondes*/
 
-/*dessin de la balle */
-ctx.beginPath();                                                /*début chemin d'instruction*/
-ctx.arc(50, 50, 10, 0, Math.PI*2);                              /*coord. x/y, rayon, angle départ/fin, direction du dessin*/
-ctx.fillStyle =                                                 /*"#0095DD" stockage de couleur*/
-ctx.fill();                                                     /*utilisation de la couleur stockée*/
-ctx.closePath();                                                /*fin chemin d'instruction*/
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);             
+    drawBall();                                             
+    x += dx;                                                    
+    y += dy;
+}
 
+setInterval(draw, 10);                                            /*Appel de la fonction"draw" toutes les 10 millisecondes*/
 
