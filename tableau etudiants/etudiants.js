@@ -1,3 +1,5 @@
+function Rechercher() {
+
 var etudiants = []
 etudiants[0] = `Cédric`
 etudiants[1] = ` Perrine`
@@ -16,10 +18,13 @@ etudiants[13] = ` Zakaria`
 etudiants[14] = ` Benoît`
 etudiants[15] = ` Karim`
 
-for (var i = 0 ; i < 15 ; i++) {
+
+
+}
+/*for (var i = 0 ; i < 15 ; i++) {
     document.write(etudiants[i]);
     
     if(i === 6){
         break;
     } 
-}
+}*/
