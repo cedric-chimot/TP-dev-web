@@ -17,22 +17,22 @@ document.addEventListener("keyup", keyUpHandler, false);
 
 /*gestion des évènements lors de l'appui des touches*/
 function keyDownHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight") {
+    if(e.keyCode == 39) {
         rightPressed = true;
     }
 
-    else if(e.key == "Left" || e.key == "ArrowLeft") {
+    else if(e.keyCode == 37) {
         leftPressed = true;
     }
 }
 
 function keyUpHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight") {
-        rightPressed = true;
+    if(e.keyCode == 39) {
+        rightPressed = false;
     }
 
-    else if(e.key == "Left" || e.key == "ArrowLeft") {
-        leftPressed = true;
+    else if(e.keyCode == 37) {
+        leftPressed = false;
     }
 }
 
