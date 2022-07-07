@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <div class="container col-lg-6">
-        <h1>Recherche étudiants</h1>
-        <input type="text" placeholder="Rechercher" id="nom_etu">
-        <input type="button" value="Rechercher" class="btn btn-success" onclick="Rechercher();" id="search">
+        <h1>Recherche étudiants</h1><br>
+        <p><input type="text" id="etu_check" value=""></p>
+        <button class="btn btn-success" onclick="Rechercher();">Rechercher</button>
+
+        <p id="search"></p>
     </div>
 
 
@@ -34,4 +38,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
 
 </body>
+
 </html>

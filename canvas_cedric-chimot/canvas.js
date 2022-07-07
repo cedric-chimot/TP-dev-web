@@ -11,6 +11,15 @@ var paddleX = (canvas.width-paddleWidth) / 2;
 var rightPressed = false;                                                       /*bouton de commande gauche ou droit enfoncé*/
 var leftPressed = false;
 
+/*variables pour stocker les infos des briques : L/H/Col/lignes*/
+var brickRowCount = 3;
+var brickColumnCount = 5;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+
 /*event listener pour gérer les mouvements de la raquette*/
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
