@@ -90,11 +90,11 @@ function draw() {
     }
 
 /*fonction pour déplacer la raquette*/
-    if(rightPressed && paddleX < canvas.width-paddleWidth) {                                                          /*déplacement de 7 pixels à droite*/
+    if(rightPressed && paddleX < canvas.width-paddleWidth) {                    /*déplacement de 7 pixels à droite*/
         paddleX += 7;
     }
 
-    else if(leftPressed && paddleX > 0) {                                                      /*déplacement de 7 pixels à gauche*/
+    else if(leftPressed && paddleX > 0) {                                       /*déplacement de 7 pixels à gauche*/
         paddleX -= 7;                                                      
     }
     
