@@ -5,15 +5,15 @@ function Calculer() {
     var stk_supp = 6;
 
     if (document.getElementById("qt_bois").value > stk_bois) {
-        alert("Stock boisson insuffisant");
+       alert(`Stock boisson insuffisant, le stock de boisson est de : ${stk_bois}`);
     }
 
     else if (document.getElementById("qt_plats").value > stk_plats) {
-        alert("Stock plats insuffisant");
+        alert(`Stock plats insuffisant, le stock de plats est de : ${stk_plats}`);
     }
 
     else if (document.getElementById("qt_supp").value > stk_supp) {
-        alert("Stock suppléments insuffisant");
+        alert(`Stock supplément insuffisant, le stock de supplément est de : ${stk_supp}`);
     }
 
     else {
