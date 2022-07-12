@@ -1,20 +1,30 @@
-let titre = "Rick Asley - Never gonna give you up";
-document.getElementById("titre").innerHTML = titre;
+document.body.firstElementChild.innerHTML = "Rick Asley - Never gonna give you up";
 
-document.getElementById("couplet").firstChild.remove();
-document.getElementById("couplet").firstElementChild.remove();
+const coupl = document.getElementsByClassName("couplet");
 
-document.getElementById("couplet1").firstChild.remove();
-document.getElementById("couplet1").firstElementChild.remove();
+for (i = 0; i < coupl.length; i++) {
+    coupl[i].removeChild(coupl[i].firstChild);
+    coupl[i].removeChild(coupl[i].firstElementChild);
+}
 
-document.getElementById("choeur").firstChild.remove();
-document.getElementById("choeur").firstElementChild.remove();
+const refrain = document.getElementsByClassName("couplet refrain");
 
-document.getElementById("choeur1").firstChild.remove();
-document.getElementById("choeur1").firstElementChild.remove();
+for (let x = 0; x < refrain.length; x++) {
+    const refrainChildren = refrain[x].childNodes;
+    const refrainNumberChildren = Math.round(refrainChildren.length / 2);
 
-document.getElementById("refrain").firstChild.remove();
-document.getElementById("refrain").firstElementChild.remove();
+    for (let y = 0; y < refrainNumberChildren; y += 2) {
+        // let child = refrainChildren[i];
 
-document.getElementById("refrain1").firstChild.remove();
-document.getElementById("refrain1").firstElementChild.remove();
+        for (let i = 0; i < 2; i++) {
+            refrain[x].removeChild(refrainChildren[y]);
+        }
+    }
+}
+
+const erreur = document.getElementById("erreur");
+erreur.remove("erreur");
+
+const footer = document.createElement("footer");
+footer.innerText = "© Copyright 2020 - Nom";
+document.body.appendChild(footer);
