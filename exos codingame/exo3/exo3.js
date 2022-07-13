@@ -7,5 +7,3 @@ checkBox = document.getElementById('masquer-paroles').addEventListener('click', 
         $("#paroles").show();
     }
 });
-
-
