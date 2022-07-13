@@ -19,3 +19,4 @@ checkBox1 = document.getElementById('masquer-refrains').addEventListener('click'
         $('#refrain').contents().last().replaceWith(' Masquer les refrains');
     }
 });
+
