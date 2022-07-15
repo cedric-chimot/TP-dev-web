@@ -20,3 +20,11 @@ checkBox1 = document.getElementById('masquer-refrains').addEventListener('click'
     }
 });
 
+/*$(document).ready(function(){
+    $("p").mouseenter(function(){
+      $("p").css("background-color", "yellow");
+    });
+    $("p").mouseleave(function(){
+      $("p").css("background-color", "lightgray");
+    });
+  });*/
